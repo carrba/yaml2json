@@ -7,14 +7,18 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "jest --verbose",
+    "lint": "eslint bin/**/*.ts lib/**/*.ts test/**/*.test.ts",
     "cdk": "cdk"
   },
   "devDependencies": {
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
     "aws-cdk": "2.15.0",
     "esbuild": "^0.15.10",
+    "eslint": "^8.24.0",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
     "ts-node": "^9.0.0",
